@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Comment Sections</h2>
+<div class="line"></div>
+<mat-dialog-content class="mat-typography">
+  <div *ngFor="let comment of comments; let i = index">
+    <div class="line"></div>
+    <span class="comment-counter">{{ i + 1 }}.</span>
+    <span>{{ comment.body }}</span>
+    <div class="line"></div>
+  </div>
+</mat-dialog-content>
+<div class="line"></div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close cdkFocusInitial>Ok</button>
+</div>

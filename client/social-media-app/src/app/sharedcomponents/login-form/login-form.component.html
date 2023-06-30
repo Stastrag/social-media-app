@@ -1,0 +1,42 @@
+<div id="login">
+    <mat-card id="login-content">
+        <mat-card-header>
+            <mat-card-title>{{getStateText()}}</mat-card-title>
+        </mat-card-header>
+        <div *ngIf="isLoginState()">
+            <input placeholder="Email" [(ngModel)] = "email"/>
+            <input  placeholder="Password" type="password" [(ngModel)] = "password">
+            <button mat-flat-button color="warn"  (click)="login()">Login</button>
+            <div class="error">{{ errorMsg}}</div>
+        </div>
+
+<div *ngIf="isRegisteredState()">
+  <input placeholder="Email" [(ngModel)]="email" name="email" />
+  <input placeholder="Password" type="password" [(ngModel)]="password" name="password" />
+  <input placeholder="Confirm Password" type="password" [(ngModel)]="confirmPassword" name="confirmPassword" />
+  <input placeholder="Username" [(ngModel)]="username" name="username" />
+  <input placeholder="Firstname" [(ngModel)]="firstName" name="firstName" />
+  <input placeholder="Lastname" [(ngModel)]="lastName" name="lastName" />
+  <button mat-flat-button color="warn" (click)="register()">Create account</button>
+</div>
+
+
+        <div *ngIf="isForgotPasswordState()">
+            <input placeholder="Email"/>
+            <button mat-flat-button color="warn">Reset</button>
+        </div>
+
+        <mat-card-actions align="end">
+            <button mat-flat-button
+            (click)="onForgotPasswordClick()">Forgot Password</button>
+            <button mat-flat-button
+            (click)="onCreateAccountClick()">Create an Account</button>
+            <button mat-flat-button
+            (click)="onLoginClick()">Login</button>
+
+        </mat-card-actions>
+
+    </mat-card>
+
+</div>
+

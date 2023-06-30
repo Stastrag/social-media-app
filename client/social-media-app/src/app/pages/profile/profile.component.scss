@@ -1,0 +1,22 @@
+.feed-container{
+    display: flex;
+    .side1{
+        width: 15%;
+        min-height: calc(100vh - 100px);
+        background-color: blueviolet;
+        
+    }
+    .user-posts {
+        width: 70%;
+        min-height: calc(100vh - 100px);
+        border-right: 2px solid purple;
+        border-left: 2px solid purple;
+
+    }
+    .side2{
+        width: 15%;
+        min-height: calc(100vh - 100px);
+        background-color: blueviolet;
+
+    }
+}

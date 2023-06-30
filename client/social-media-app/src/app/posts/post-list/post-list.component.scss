@@ -1,0 +1,40 @@
+mat-expansion-panel {
+    width: 80%;
+    margin: auto;
+ }
+
+ :host {
+    display: block;
+    margin-top: 1rem;
+ }
+
+ .info-text {
+    text-align: center;
+ }
+ .like-button {
+   height: 1.3rem;
+   width: 1.3rem;
+}
+
+.line {
+   border-top: 1px solid rgba(110, 110, 110, 0.6);
+   padding: 0.2rem; 
+ }
+
+mat-icon {
+   margin: 0.5rem;
+}
+
+img{
+   cursor: pointer;
+}
+
+.demo-section {
+   display: flex;
+   justify-content: space-between;
+}
+
+.commentLink {
+   text-decoration:underline;
+   cursor: pointer;
+}
